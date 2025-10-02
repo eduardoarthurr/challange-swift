@@ -3,54 +3,69 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
-  <title> Swift </title>
+  <title>Compras</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
   <link rel="stylesheet" href="../compras/compra.css">
 </head>
 <body>
 
-  <!-- Cabeçalho -->
   <nav class="navbar bg-body-tertiary estetica-cabecalho">
     <div class="container">
-      <a class="navbar-brand" href="">
+      <a class="navbar-brand" href="../home/home.html">
         <img src="../imgs/logo_cabecalho .png" alt="logo_cabecalho">
       </a>
     </div>
   </nav>
 
-  <!-- Conteúdo principal -->
-  <section class="container-principal">
+  <section class="botoes-compras">
+    <a href="../compras/categorias.html" class="botao-compra">
+      <img src="../imgs/imgs_compras/icon-categorias.png" alt="Categorias">
+      <span>CATEGORIAS</span>
+    </a>
 
-    <div class="container-botoes">
+    <a href="../compras/kits.html" class="botao-compra">
+      <img src="../imgs/imgs_compras/icon-kits.png" alt="Kits Swift">
+      <span>KITS SWIFT</span>
+    </a>
+  </section>
 
-      <!-- Botão Categorias -->
-      <a href="categorias.html" class="bloco-categoria">
-        <img src="../imgs/imgs_compras/categorias.png" alt="Categorias">
-        <span>CATEGORIAS</span>
-      </a>
+  <section class="entregas">
+    <h2 class="titulo-entregas">NOSSAS ENTREGAS</h2>
 
-      <!-- Botão Kits Swift -->
-      <a href="kits.html" class="bloco-kits">
-        <img src="../imgs/imgs_compras/kits.png" alt="Kits Swift">
-        <span>KITS SWIFT</span>
-      </a>
+    <div class="cards-entregas">
+
+      <div class="card-entrega">
+        <img src="../imgs/imgs_compras/icon-retirada.png" alt="Retirada">
+        <h3>RETIRADA</h3>
+        <p>
+          Escolha a data para retirada e vá até a loja mais próxima.<br><br>
+          Conforme disponibilidade no momento do checkout (até 10 dias corridos a partir da data da compra).<br><br>
+          Você receberá uma key com senha numérica. Para retirar, basta mostrar a key Swift para o atendente.
+        </p>
+      </div>
+
+      <div class="card-entrega">
+        <img src="../imgs/imgs_compras/icon-entrega.png" alt="Entrega">
+        <h3>ENTREGA</h3>
+        <p>
+          Receba o pedido na sua residência e valide a compra a partir da key Swift que você irá receber.<br><br>
+          Pedidos feitos até as 15h são entregues no dia seguinte. Após as 15h, ficam disponíveis a partir do 2º dia útil.<br><br>
+          O valor do frete é a partir de R$4,90.
+        </p>
+      </div>
 
     </div>
-
   </section>
-  
 
-  <!-- Navbar inferior (bolha) -->
   <div class="bolha-navbar">
     <ul class="nav nav-underline estetica-navbar">
         <li class="nav-item">
-            <a class="nav-link" aria-current="page" href="../home/home.html">
+            <a class="nav-link" href="../home/home.html">
                 <img src="../imgs/home.png" alt="">
             </a>
         </li>
         <li class="nav-item">
-            <a class="nav-link" href="../compras/compra.html">
+            <a class="nav-link active" href="../compras/compra.html">
                 <img src="../imgs/sacola.png" alt="">
             </a>
         </li>
@@ -63,6 +78,5 @@
   </div>
 
   <footer class="rodape"></footer>
-
 </body>
 </html>
