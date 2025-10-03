@@ -159,7 +159,21 @@ body {
 
 /* Rodapé */
 .rodape {
-  background-color: #DC4405;
-  width: 100%;
-  height: 40vh;
+  background: linear-gradient(45deg, #dc4405, #ff5c00);
+  padding: 30px 20px;
+  color: white;
+  margin-top: 50px;
+}
+
+.rodape p {
+  margin: 0;
+  font-weight: bold;
+  font-size: 1rem;
+}
+
+.rodape small {
+  display: block;
+  margin-top: 8px;
+  opacity: 0.8;
+  font-size: 0.8rem;
 }
