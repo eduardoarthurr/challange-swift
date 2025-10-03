@@ -145,17 +145,6 @@ body {
   width: 100%;
 }
 
-/* Responsividade */
-@media (max-width: 768px) {
-  .estetica-navbar {
-    width: 60vh;
-    gap: 20px;
-  }
-
-  .estetica-navbar a {
-    font-size: 0.9rem;
-  }
-}
 
 /* Rodapé */
 .rodape {
@@ -176,4 +165,15 @@ body {
   margin-top: 8px;
   opacity: 0.8;
   font-size: 0.8rem;
+}
+
+@media (max-width: 768px) {
+  .estetica-navbar {
+    width: 60vh;
+    gap: 20px;
+  }
+
+  .estetica-navbar a {
+    font-size: 0.9rem;
+  }
 }
