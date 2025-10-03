@@ -1,33 +1,60 @@
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
 body {
   font-family: Arial, sans-serif;
   background-color: #fff;
+  margin: 0;
+  padding: 0;
 }
 
-.estetica-cabecalho {
-  background-color: #DC4405;
+/* 🔹 Header fixo com logo central e botão voltar */
+.header-swift {
+  background-color: #dc4405;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
   display: flex;
   justify-content: center;
   align-items: center;
+  padding: 12px 20px;
 }
 
+.header-swift .logo-center img {
+  max-height: 40px;
+}
+
+/* Botão voltar caprichado */
+.btn-voltar {
+  position: absolute;
+  left: 20px;
+  padding: 8px 18px;
+  background-color: #fff;
+  color: #dc4405;
+  border-radius: 25px;
+  font-weight: bold;
+  text-decoration: none;
+  font-size: 0.95rem;
+  transition: all 0.3s ease;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+}
+
+.btn-voltar:hover {
+  background-color: #ff5c00;
+  color: #fff;
+}
+
+/* --- SEÇÃO BOTÕES COMPRAS --- */
 .botoes-compras {
   display: flex;
-  justify-content: space-around;
-  align-items: center;
-  padding: 30px 10px;
+  justify-content: center;
+  gap: 60px;
+  margin: 50px 0 40px 0;
+  flex-wrap: wrap;
 }
 
 .botao-compra {
   background-color: #DC4405;
-  width: 140px;
-  height: 120px;
-  border-radius: 25px;
+  width: 220px;
+  height: 180px;
+  border-radius: 30px;
   text-align: center;
   color: white;
   font-weight: bold;
@@ -36,18 +63,27 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  transition: 0.3s;
+
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
+  transition: transform 0.3s ease, background-color 0.3s ease;
 }
 
 .botao-compra img {
-  width: 40px;
-  margin-bottom: 8px;
+  width: 60px;
+  margin-bottom: 15px;
+}
+
+.botao-compra span {
+  font-size: 1.2rem;
+  letter-spacing: 1px;
 }
 
 .botao-compra:hover {
   background-color: #FF5C00;
+  transform: scale(1.05);
 }
 
+/* --- Seção entregas --- */
 .entregas {
   text-align: center;
   margin: 30px 0;
@@ -90,6 +126,7 @@ body {
   font-size: 0.9rem;
 }
 
+/* --- Navbar bolha --- */
 .bolha-navbar {
   position: fixed;
   bottom: 20px;               
@@ -99,7 +136,7 @@ body {
 }
 
 .estetica-navbar {
-  background-color: #DC4405 ;
+  background-color: #DC4405;
   border-radius: 30px;
   width: 80vh;
   height: 55px;
@@ -138,11 +175,15 @@ body {
         display: flex;
         gap: 15px;
     }
+    .btn-voltar {
+      font-size: 0.8rem;
+      padding: 6px 12px;
+    }
 }
 
+/* --- Rodapé --- */
 .rodape {
   background-color: #DC4405;
   width: 100%;
   height: 40vh;
 }
-/* Rpdape (FIM)*/ 

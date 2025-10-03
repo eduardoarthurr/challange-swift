@@ -9,17 +9,30 @@ body {
   background-color: #f9f9f9;
 }
 
-.estetica-cabecalho {
+/* Barra Laranja */
+.bg-orange {
+  background-color: #DC4405;  /* Cor laranja da Swift */
+}
+
+.navbar {
   background-color: #DC4405;
+  padding: 10px 0;
+}
+
+.navbar .container {
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-.estetica-cabecalho .container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+.navbar-brand img {
+  max-height: 50px;
+  width: auto;
+}
+
+/* Seção de Kits */
+.container-kits {
+  padding: 80px 20px 20px 20px; /* Ajuste para o espaço da barra fixa */
 }
 
 .titulo-pagina {
@@ -27,10 +40,6 @@ body {
   margin: 20px 0;
   color: #DC4405;
   font-weight: bold;
-}
-
-.container-kits {
-  padding: 20px;
 }
 
 .cards-kits {
@@ -82,16 +91,17 @@ body {
   background-color: #FF5C00;
 }
 
+/* Navegação Inferior */
 .bolha-navbar {
   position: fixed;
-  bottom: 20px;               
-  left: 50%;                 
+  bottom: 20px;
+  left: 50%;
   transform: translateX(-50%);
   z-index: 1000;
 }
 
 .estetica-navbar {
-  background-color: #DC4405 ;
+  background-color: #DC4405;
   border-radius: 30px;
   width: 80vh;
   height: 55px;
@@ -99,37 +109,40 @@ body {
   justify-content: center;
   align-items: center;
   gap: 60px;
-  background-image: linear-gradient(45deg, #DC4405, #FF5C00 );
+  background-image: linear-gradient(45deg, #DC4405, #FF5C00);
 }
 
 .estetica-navbar a {
-    text-align: center;
-    position: relative;
+  text-align: center;
+  position: relative;
 }
 
 .estetica-navbar a::after {
-    content: "";
-    width: 0;
-    height: 3px;
-    background-color: white;
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    transition: width 0.2s ease-in-out;
+  content: "";
+  width: 0;
+  height: 3px;
+  background-color: white;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  transition: width 0.2s ease-in-out;
 }
 
 .estetica-navbar a:hover::after,
 .estetica-navbar a.active::after {
-    width: 100%;
+  width: 100%;
 }
 
-@media (max-width: 576px) {
-    .estetica-navbar{
-        border-radius: 30px;
-        width: 40vh;
-        display: flex;
-        gap: 15px;
-    }
+/* Responsividade */
+@media (max-width: 768px) {
+  .estetica-navbar {
+    width: 60vh;
+    gap: 20px;
+  }
+
+  .estetica-navbar a {
+    font-size: 0.9rem;
+  }
 }
 
 /* Rodapé */
