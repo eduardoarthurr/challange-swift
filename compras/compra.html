@@ -9,7 +9,6 @@
 </head>
 <body>
 
-  <!-- 🔹 Barra laranja com logo e botão Voltar -->
   <div class="header-swift">
     <a href="../home/home.html" class="btn-voltar">⟵ Voltar Home</a>
     <a href="../home/home.html" class="logo-center">
@@ -17,7 +16,6 @@
     </a>
   </div>
 
-  <!-- 🔹 Botões de compras -->
   <section class="botoes-compras">
     <a href="../compras/categorias.html" class="botao-compra">
       <img src="../imgs/imgs_compras/icon-categorias.png" alt="Categorias">
@@ -30,33 +28,68 @@
     </a>
   </section>
 
-  <!-- 🔹 Nossas entregas -->
-  <section class="entregas"> <br><br>
-    <h2 class="titulo-entregas">NOSSAS ENTREGAS</h2>
+  <div class="text-center my-4">
+    <a href="../compras/categorias.html" class="btn btn-explorar">Explorar todos os produtos</a>
+  </div>
+
+  <section class="kits-destaque">
+    <h2 class="titulo-secao">PRODUTOS EM DESTAQUE</h2>
+    <div class="row justify-content-center g-4">
+      <div class="col-md-3 col-10">
+        <div class="card kit-card">
+          <img src="../imgs/imgs_compras/churras.png" class="card-img-top" alt="Kit 1">
+          <div class="card-body">
+            <h5 class="card-title">Para Churrasco</h5>
+            <p class="card-text">Ideal para reunir os amigos com cortes selecionados.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-3 col-10">
+        <div class="card kit-card">
+          <img src="../imgs/imgs_compras/dia-a-dia.png" class="card-img-top" alt="Kit 2">
+          <div class="card-body">
+            <h5 class="card-title">Para a Semana</h5>
+            <p class="card-text">Variedade de carnes para o dia a dia com praticidade.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-3 col-10">
+        <div class="card kit-card">
+          <img src="../imgs/imgs_compras/salmao.png" class="card-img-top" alt="Kit 3">
+          <div class="card-body">
+            <h5 class="card-title">Para toda a Família</h5>
+            <p class="card-text">Mais economia e sabor para todos os momentos.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="entregas">
+    <h2 class="titulo-secao">NOSSAS ENTREGAS</h2>
     <div class="cards-entregas">
       <div class="card-entrega">
         <img src="../imgs/imgs_compras/icon-retirada.png" alt="Retirada">
-        <h7>RETIRADA</h7>
+        <h5>RETIRADA</h5>
         <p>
-          Escolha a data para retirada e vá até a loja mais próxima.<br><br>
-          Conforme disponibilidade no momento do checkout (até 10 dias corridos a partir da data da compra).<br><br>
-          Você receberá uma key com senha numérica. Para retirar, basta mostrar a key Swift para o atendente.
+          Escolha a data para retirada na loja mais próxima.  
+          Disponível até 10 dias após a compra.  
+          Receba sua key Swift e retire facilmente no balcão.
         </p>
       </div>
 
       <div class="card-entrega">
         <img src="../imgs/imgs_compras/icon-entrega.png" alt="Entrega">
-        <h7>ENTREGA</h7>
+        <h5>ENTREGA</h5>
         <p>
-          Receba o pedido na sua residência e valide a compra a partir da key Swift que você irá receber.<br><br>
-          Pedidos feitos até as 15h são entregues no dia seguinte. Após as 15h, ficam disponíveis a partir do 2º dia útil.<br><br>
-          O valor do frete é a partir de R$4,90.
+          Receba seu pedido em casa com validação via key Swift.  
+          Pedidos até 15h entregues no dia seguinte.  
+          Frete a partir de <strong>R$ 4,90</strong>.
         </p>
       </div>
     </div>
   </section>
 
-  <!-- 🔹 Navbar bolha inferior -->
   <div class="bolha-navbar">
     <ul class="nav nav-underline estetica-navbar">
         <li class="nav-item">
@@ -77,7 +110,9 @@
     </ul> 
   </div>
 
-  <footer class="rodape"></footer>
-</body>
-</html>
-
+ <footer class="rodape">
+    <p>© 2025 Swift - Todos os direitos reservados.</p>
+    <div class="social">
+      <a href="#">Instagram</a> | <a href="#">Facebook</a> | <a href="#">YouTube</a>
+    </div>
+  </footer>

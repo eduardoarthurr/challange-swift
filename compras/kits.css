@@ -5,34 +5,47 @@
 }
 
 body {
-  font-family: Arial, sans-serif;
+  font-family: 'Arial', sans-serif;
   background-color: #f9f9f9;
+  color: #333;
 }
 
-/* Barra Laranja */
-.bg-orange {
-  background-color: #DC4405;  /* Cor laranja da Swift */
-}
-
-.navbar {
-  background-color: #DC4405;
-  padding: 10px 0;
-}
-
-.navbar .container {
+.header-swift {
+  background-color: #dc4405;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
   display: flex;
   justify-content: center;
   align-items: center;
+  padding: 12px 20px;
 }
 
-.navbar-brand img {
-  max-height: 50px;
-  width: auto;
+.header-swift .logo-center img {
+  max-height: 40px;
 }
 
-/* Seção de Kits */
+.btn-voltar {
+  position: absolute;
+  left: 20px;
+  padding: 8px 18px;
+  background-color: #fff;
+  color: #dc4405;
+  border-radius: 25px;
+  font-weight: bold;
+  text-decoration: none;
+  font-size: 0.95rem;
+  transition: all 0.3s ease;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+}
+
+.btn-voltar:hover {
+  background-color: #ff5c00;
+  color: #fff;
+}
+
 .container-kits {
-  padding: 80px 20px 20px 20px; /* Ajuste para o espaço da barra fixa */
+  padding: 80px 20px 20px 20px; 
 }
 
 .titulo-pagina {
@@ -91,7 +104,6 @@ body {
   background-color: #FF5C00;
 }
 
-/* Navegação Inferior */
 .bolha-navbar {
   position: fixed;
   bottom: 20px;
