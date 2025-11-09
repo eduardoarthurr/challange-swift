@@ -56,6 +56,11 @@ Antes de investir totalmente nos armários inteligentes, um **MVP (Produto Míni
 3.  O cliente mostra a **key Swift** ao atendente, que entrega o pedido e o lança como entregue no sistema.
 
 ---
+## 🖼️ Demonstração
+
+![Preview Challange](https://github.com/eduardoarthurr/challange-swift/blob/main/imgs/Print_Challange.png)
+
+---
 
 ## 👥 Membros do Grupo
 
