@@ -62,10 +62,3 @@ Antes de investir totalmente nos armários inteligentes, um **MVP (Produto Míni
 
 ---
 
-## 👥 Membros do Grupo
-
-* EDUARDO (RM: 559062)
-* RODRIGO (RM: 558564) 
-* ANA LUIZA (RM: 562568) 
-* JULIA (RM: 565591) 
-* ARTUR (RM: 565481) 
